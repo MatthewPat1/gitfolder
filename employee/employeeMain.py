@@ -5,16 +5,34 @@ class employee:
         self.id = id
         self.start = start
         self.status = status
-        print(name)
 
-    def getName():
-        return name
-    def getId():
-        return id
-    def getStart():
-        return start
-    def getStatus():
-        return status
+    def getName(self):
+        return self.name
+    def getId(self):
+        return self.id
+    def getStart(self):
+        return self.start
+    def getStatus(self):
+        return self.status
 
+class employeeController:
+    
+    
+    def __init__(self, unitName):
+            self.unitname = unitName
+            self.employeeList = [] 
 
-Matthew = employee('Matthew', 2341, '5/31/2022', 'Employed')
+    def addEmployee(self, employee):
+       self.employeeList.append((employee.getName(), employee.getId()))
+        
+    def pel(self):
+        print(self.employeeList)
+
+        
+empctl = employeeController('sales')
+matt = employee('matthew',32,'5/31/2022', 'employed')
+
+empctl.addEmployee(matt)
+empctl.addEmployee(matt)
+empctl.addEmployee(matt)
+empctl.pel()
