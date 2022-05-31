@@ -1,2 +1,2 @@
-with open('textfiles/text.txt', 'r+') as textfile:
-    textfile.truncate(9)
+with open('testfiles/text.txt', 'r+') as f:
+    f.truncate(9)
