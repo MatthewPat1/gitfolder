@@ -1,5 +1,5 @@
+lst = ['24.2515.2636','262.6211jk2j5.52.1512135.15','2156.1235151.5151.154.221']
 
-list =[]
+dict = { 'key1' : lst }
 
-list.append({'xml', 5 })
-print(list)
+print(dict['key1'])
