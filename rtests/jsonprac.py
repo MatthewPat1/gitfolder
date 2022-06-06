@@ -17,7 +17,8 @@ def jsonLoad():
 
     with open('C:/Users/Matthew/Desktop/gitfolderT/gitpractice/fileMain/testfiles/prac.json', 'r+') as f:
         json_load = json.load(f)
-        print(json_load)
-
+        
+        for key, value in json_load.items():
+            print(key,value)
 jsonRun()
 jsonLoad()
